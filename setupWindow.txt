@@ -1,0 +1,20 @@
+`download python 
+https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe
+
+`download pip 
+py -m ensurepip --upgrade
+py get-pip.py
+py -m pip install --upgrade pip
+
+`download  openpyxl 
+pip install openpyxl
+
+`download selenium
+pip install selenium
+
+
+` run tool
+py toolp.py
+
+file logs exceptions
+exceptions.txt
