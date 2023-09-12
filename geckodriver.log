@@ -1,0 +1,367 @@
+1694504588836	geckodriver	INFO	Listening on 127.0.0.1:58054
+1694504591897	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "ignore-certifica ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileWbH74R"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504593155	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504593294	Marionette	INFO	Listening on port 58065
+WebDriver BiDi listening on ws://127.0.0.1:58055
+Read port: 58065
+1694504593545	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58055/devtools/browser/a8a61aa2-26ef-4e62-9302-170e92432fe6
+1694504738810	geckodriver	INFO	Listening on 127.0.0.1:58121
+1694504741842	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "ignore-certifica ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileWWNidK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504742251	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504742346	Marionette	INFO	Listening on port 58129
+WebDriver BiDi listening on ws://127.0.0.1:58122
+Read port: 58129
+1694504742613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58122/devtools/browser/a0605baf-2d8e-448b-b30a-2006c89758fe
+1694504755145	geckodriver	INFO	Listening on 127.0.0.1:58154
+1694504758186	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileODkeaB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504758586	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504758683	Marionette	INFO	Listening on port 58162
+WebDriver BiDi listening on ws://127.0.0.1:58155
+Read port: 58162
+1694504758948	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58155/devtools/browser/805b7f96-2a83-4670-9380-363a9901e824
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504788503	Marionette	INFO	Stopped listening on port 58162
+Dynamically enable window occlusion 1
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1694504789373	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2147500036, errorCode: 2, reason: error
+1694504792334	geckodriver	INFO	Listening on 127.0.0.1:58213
+1694504795376	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofile8EmxhO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504795785	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504795874	Marionette	INFO	Listening on port 58221
+WebDriver BiDi listening on ws://127.0.0.1:58214
+Read port: 58221
+1694504796138	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58214/devtools/browser/b7a94350-f765-44db-80d7-617a8ec60200
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504819552	Marionette	INFO	Stopped listening on port 58221
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694504822956	geckodriver	INFO	Listening on 127.0.0.1:58270
+1694504826025	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofilepZQn7h"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504826444	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504826530	Marionette	INFO	Listening on port 58278
+WebDriver BiDi listening on ws://127.0.0.1:58271
+Read port: 58278
+1694504826798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58271/devtools/browser/81861946-f341-4ad4-b50c-643b0c16c9a8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504859643	Marionette	INFO	Stopped listening on port 58278
+Dynamically enable window occlusion 1
+1694504863080	geckodriver	INFO	Listening on 127.0.0.1:58332
+1694504866139	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofile4jTu93"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504866546	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504866636	Marionette	INFO	Listening on port 58340
+WebDriver BiDi listening on ws://127.0.0.1:58333
+Read port: 58340
+1694504866921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58333/devtools/browser/a85a8fb1-e539-458d-8c7b-9b3bcf884081
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504889874	Marionette	INFO	Stopped listening on port 58340
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694504893517	geckodriver	INFO	Listening on 127.0.0.1:58393
+1694504896558	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofile8A3gZn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504896982	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504897078	Marionette	INFO	Listening on port 58401
+WebDriver BiDi listening on ws://127.0.0.1:58394
+Read port: 58401
+1694504897303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58394/devtools/browser/e9624210-f45d-4270-9259-d29d959f020d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504930969	Marionette	INFO	Stopped listening on port 58401
+Dynamically enable window occlusion 1
+1694504934438	geckodriver	INFO	Listening on 127.0.0.1:58452
+1694504937489	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileUv2IC5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504937912	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504938003	Marionette	INFO	Listening on port 58460
+WebDriver BiDi listening on ws://127.0.0.1:58453
+Read port: 58460
+1694504938217	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58453/devtools/browser/eb42a4b7-13c7-4fb4-822b-8e06b36c4bf3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694504962053	Marionette	INFO	Stopped listening on port 58460
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694504965593	geckodriver	INFO	Listening on 127.0.0.1:58510
+1694504968667	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileSO9PXr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694504969107	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694504969199	Marionette	INFO	Listening on port 58520
+WebDriver BiDi listening on ws://127.0.0.1:58511
+Read port: 58520
+1694504969404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58511/devtools/browser/baf63e14-a339-4f88-831e-39a913726cd9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505003446	Marionette	INFO	Stopped listening on port 58520
+Dynamically enable window occlusion 1
+1694505007073	geckodriver	INFO	Listening on 127.0.0.1:58568
+1694505010121	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofilelgwkVR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505010527	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505010683	Marionette	INFO	Listening on port 58577
+WebDriver BiDi listening on ws://127.0.0.1:58569
+Read port: 58577
+1694505010960	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58569/devtools/browser/ab2611ad-dde3-4cae-acab-d7f7231e76c9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505034636	Marionette	INFO	Stopped listening on port 58577
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505038595	geckodriver	INFO	Listening on 127.0.0.1:58625
+1694505041646	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileUP7fHu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505042440	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505042547	Marionette	INFO	Listening on port 58633
+WebDriver BiDi listening on ws://127.0.0.1:58626
+Read port: 58633
+1694505042796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58626/devtools/browser/062e0791-86b3-4ea7-9eb4-2e2314dfd6c4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505066643	Marionette	INFO	Stopped listening on port 58633
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505280486	geckodriver	INFO	Listening on 127.0.0.1:58835
+1694505283537	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofilegTXYsd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505284207	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505284301	Marionette	INFO	Listening on port 58845
+WebDriver BiDi listening on ws://127.0.0.1:58836
+Read port: 58845
+1694505284594	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58836/devtools/browser/bae03f2e-078e-40b3-8d19-110285fd5ff4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505304729	Marionette	INFO	Stopped listening on port 58845
+Dynamically enable window occlusion 1
+1694505371896	geckodriver	INFO	Listening on 127.0.0.1:59071
+1694505374942	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileSDpCqD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505375391	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505375486	Marionette	INFO	Listening on port 59084
+Read port: 59084
+WebDriver BiDi listening on ws://127.0.0.1:59072
+1694505375592	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59072/devtools/browser/02653ba5-c9a2-4d2d-b5c6-784558f540d6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505396792	Marionette	INFO	Stopped listening on port 59084
+Dynamically enable window occlusion 1
+1694505400626	geckodriver	INFO	Listening on 127.0.0.1:59141
+1694505403666	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileztzdXM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505404149	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505404255	Marionette	INFO	Listening on port 59152
+WebDriver BiDi listening on ws://127.0.0.1:59142
+Read port: 59152
+1694505404562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59142/devtools/browser/4da0af93-c8d5-4c78-a1d0-c31f82c121cc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505420660	Marionette	INFO	Stopped listening on port 59152
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505424688	geckodriver	INFO	Listening on 127.0.0.1:59218
+1694505427745	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofilewJYb4m"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505428240	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505428350	Marionette	INFO	Listening on port 59235
+WebDriver BiDi listening on ws://127.0.0.1:59219
+Read port: 59235
+1694505428590	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59219/devtools/browser/32b5d1d2-26d1-498e-aa3c-fdcb5b2056be
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505446791	Marionette	INFO	Stopped listening on port 59235
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505450443	geckodriver	INFO	Listening on 127.0.0.1:59291
+1694505453500	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileuNA3fq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505453973	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505454068	Marionette	INFO	Listening on port 59301
+WebDriver BiDi listening on ws://127.0.0.1:59292
+Read port: 59301
+1694505454387	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59292/devtools/browser/b67095e5-f386-4f58-9ed8-e4f930851ada
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505486664	Marionette	INFO	Stopped listening on port 59301
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+1694505490655	geckodriver	INFO	Listening on 127.0.0.1:59376
+1694505493692	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileUnZOiB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505494337	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505494457	Marionette	INFO	Listening on port 59386
+Read port: 59386
+WebDriver BiDi listening on ws://127.0.0.1:59377
+1694505494586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59377/devtools/browser/a241f578-7c11-41e1-a186-e673e0bbef6d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505511242	Marionette	INFO	Stopped listening on port 59386
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505514865	geckodriver	INFO	Listening on 127.0.0.1:59441
+1694505517903	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofilevQeyRP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505518388	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505518490	Marionette	INFO	Listening on port 59450
+WebDriver BiDi listening on ws://127.0.0.1:59442
+Read port: 59450
+1694505518799	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59442/devtools/browser/2ed57725-ae7a-4d39-8b5b-65b43610d075
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505538538	Marionette	INFO	Stopped listening on port 59450
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505542368	geckodriver	INFO	Listening on 127.0.0.1:59505
+1694505545433	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileMbjMbb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505545909	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505546013	Marionette	INFO	Listening on port 59515
+WebDriver BiDi listening on ws://127.0.0.1:59506
+Read port: 59515
+1694505546324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59506/devtools/browser/c6b53d63-0f55-498a-946c-9f7183ed8f13
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505570523	Marionette	INFO	Stopped listening on port 59515
+Dynamically enable window occlusion 1
+1694505574202	geckodriver	INFO	Listening on 127.0.0.1:59679
+1694505577246	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofiles7sQAq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505577736	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505577836	Marionette	INFO	Listening on port 59688
+WebDriver BiDi listening on ws://127.0.0.1:59680
+Read port: 59688
+1694505578207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59680/devtools/browser/dddf1c59-66fe-458b-8695-2a8aeec3ecf5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505598140	Marionette	INFO	Stopped listening on port 59688
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+Dynamically enable window occlusion 1
+1694505602474	geckodriver	INFO	Listening on 127.0.0.1:59756
+1694505605509	mozrunner::runner	INFO	Running command: "C:\\Users\\bqminh30\\.cache\\selenium\\firefox\\win64\\117.0\\firefox.exe" "--marionette" "--remote-debuggi ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bqminh30\\AppData\\Local\\Temp\\rust_mozprofileGgwgPx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694505605979	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694505606082	Marionette	INFO	Listening on port 59765
+WebDriver BiDi listening on ws://127.0.0.1:59757
+Read port: 59765
+1694505606454	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59757/devtools/browser/71ec4816-2e9e-4fd3-81ef-e79f808c2a41
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://metahome.digital."
+1694505633283	Marionette	INFO	Stopped listening on port 59765
+Dynamically enable window occlusion 1

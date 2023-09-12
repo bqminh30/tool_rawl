@@ -1,51 +1,55 @@
-# Import the required modules
 from selenium import webdriver
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-import time
-import json
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-import requests
-import os
-import whisper
-import warnings
-warnings.filterwarnings("ignore")
+import chromedriver_autoinstaller # pip install chromedriver-autoinstaller
+import random
 
-model = whisper.load_model("base")
+chromedriver_autoinstaller.install() # To update your chromedriver automatically
 
-def transcribe(url):
-    with open('.temp', 'wb') as f:
-        f.write(requests.get(url).content)
-    result = model.transcribe('.temp')
-    return result["text"].strip()
 
-def click_checkbox(driver):
-    driver.switch_to.default_content()
-    driver.switch_to.frame(driver.find_element(By.XPATH, ".//iframe[@title='reCAPTCHA']"))
-    driver.find_element(By.ID, "recaptcha-anchor-label").click()
-    driver.switch_to.default_content()
+# the list of proxy to rotate on 
+PROXIES = [
+    'http://113.161.131.43:80',
+    'http://1.54.250.30:8080',
+    'http://27.72.103.122:8080',
+    'http://118.69.111.51:8080',
+    'http://123.30.154.171:7777'
+]
 
-def request_audio_version(driver):
-    driver.switch_to.default_content()
-    driver.switch_to.frame(driver.find_element(By.XPATH, ".//iframe[@title='recaptcha challenge expires in two minutes']"))
-    driver.find_element(By.ID, "recaptcha-audio-button").click()
+# randomly extract a proxy
+random_proxy = random.choice(PROXIES)
 
-def solve_audio_captcha(driver):
-    driver.maximize_window() # For maximizing window
-    driver.implicitly_wait(5) # gives an implicit wait for 20 seconds
-    text = transcribe(driver.find_element(By.ID, "audio-source").get_attribute('src'))
-    driver.implicitly_wait(5)
-    driver.find_element(By.ID, "audio-response").send_keys(text)
-    driver.find_element(By.ID, "recaptcha-verify-button").click()
+seleniumwire_options = {
+    'proxy': {
+        'http': f'{random_proxy}',
+        'https': f'{random_proxy}',
+        'verify_ssl': False,
+    },
+}
 
-if __name__ == "__main__":
-    driver = webdriver.Chrome()
-  
-    driver.get("https://www.google.com/recaptcha/api2/demo")
-    click_checkbox(driver)
-    time.sleep(1)
-    request_audio_version(driver)
-    time.sleep(1)
-    solve_audio_captcha(driver)
-    time.sleep(10)
-    driver.quit()
+driver = webdriver.Chrome(seleniumwire_options=seleniumwire_options)
+# Get free proxies for rotating
+def get_free_proxies(driver):
+    driver.visit('https://sslproxies.org')
+
+    table = driver.find_element(By.TAG_NAME, 'table')
+    thead = table.find_element(By.TAG_NAME, 'thead').find_elements(By.TAG_NAME, 'th')
+    tbody = table.find_element(By.TAG_NAME, 'tbody').find_elements(By.TAG_NAME, 'tr')
+
+    headers = []
+    for th in thead:
+        headers.append(th.text.strip())
+
+    proxies = []
+    for tr in tbody:
+        proxy_data = {}
+        tds = tr.find_elements(By.TAG_NAME, 'td')
+        for i in range(len(headers)):
+            proxy_data[headers[i]] = tds[i].text.strip()
+        proxies.append(proxy_data)
+    
+    return proxies
+
+
+free_proxies = get_free_proxies(driver)
+
+print(free_proxies)
