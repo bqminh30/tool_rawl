@@ -8,10 +8,11 @@ from selenium.webdriver.support import expected_conditions as EC
 import seleniumwire.undetected_chromedriver as uc
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 import random
 
 # Đường dẫn đến file Excel
-excel_file_path = './test129.xlsx'
+excel_file_path = './toolp2.xlsx'
 
 # Mở file Excel
 workbook = openpyxl.load_workbook(excel_file_path)
@@ -20,53 +21,40 @@ sheet = workbook.active
 exceptions_list = []
 count = 1
 # profile = webdriver.FirefoxProfile()
-options = webdriver.FirefoxOptions()
+
 # options.add_argument('ignore-certificate-errors')
+opts = Options()
+user_agent = 'Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
 
-for row in sheet.iter_rows(min_row=5, values_only=True):  # Bắt đầu từ hàng thứ 2 (hàng đầu tiên chứa tiêu đề)
-    username, email, password, phone, code = row[:5]
 
-    # the list of proxy to rotate on 
-    PROXIES = [
-        'http://113.161.131.43:80',
-        'http://118.69.134.3:80',
-        'http://118.69.134.0:80',
-        'http://42.112.22.6:80',
-        'http://103.74.121.88:3128',
-        'http://14.177.235.17:8080',
-        'http://116.111.119.16:8080',
-        'http://14.241.62.12:19132',
-        'http://113.161.93.29:8080',
-        'http://117.4.50.142:32650',
-    ]
+proxy_url = 'http://222.252.156.61:62694'
 
-# randomly extract a proxy
-    random_proxy = random.choice(PROXIES)
+webdriver.DesiredCapabilities.CHROME['proxy'] = {
+    "httpProxy": proxy_url,
+    "ftpProxy": proxy_url,
+    "sslProxy": proxy_url,
+    "proxyType": "MANUAL",
 
-    # webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
-    #     "httpProxy":random_proxy,
-    #     "ftpProxy":random_proxy,
-    #     "sslProxy":random_proxy,
-    #     "noProxy":None,
-    #     "proxyType":"MANUAL",
-    #     "class":"org.openqa.selenium.Proxy",
-    #     "autodetect":False
-    # }
-    options.add_argument('--proxy-server=%s' % random_proxy)
+}
 
-    
+webdriver.DesiredCapabilities.CHROME['acceptSslCerts']=True
+opts.add_argument("user-agent="+user_agent)
+
+print(webdriver.DesiredCapabilities.CHROME)
+
     # Khởi tạo trình duyệt web (ví dụ: Chrome)
     # driver = webdriver.Chrome(seleniumwire_options=seleniumwire_options)
-    driver = webdriver.Firefox(
-        options=options,
+
+for row in sheet.iter_rows(min_row=2, values_only=True):  # Bắt đầu từ hàng thứ 2 (hàng đầu tiên chứa tiêu đề)
+    username, email, password, phone, code = row[:5]
+    driver = webdriver.Chrome(
+     options=opts,
     )
     # Điều hướng đến trang đăng ký
     driver.get('https://metahome.digital/sign-up')
     count = count+1
     time.sleep(50)
-    print(
-        'random_proxy',random_proxy
-    )
+    
     # Tìm các phần tử input và nhập thông tin tương ứng
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="email"]').send_keys(email)
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="password"]').send_keys(password)
@@ -112,10 +100,10 @@ for row in sheet.iter_rows(min_row=5, values_only=True):  # Bắt đầu từ h�
             # driver.find_element(By.XPATH, ".v-card-title button[type='button']").click()
             driver.close()
         except:
-            print(count+1,random_proxy)
+            print(count+1)
     except:
-        exceptions_list.append({count+1, random_proxy})
-        with open("exceptions.txt", "a") as file:
+        exceptions_list.append({count+1})
+        with open("exceptions3.txt", "a") as file:
             file.write(str(exceptions_list) + "\n")  # Ghi lỗi vào tệp văn bản
     # Kết thúc
     driver.quit()
