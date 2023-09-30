@@ -18,15 +18,15 @@ options.add_experimental_option(
     "excludeSwitches", ['enable-automation'])
 exceptions_list = []
 count = 1
-driver = webdriver.Chrome(
-        options
-)
-for row in sheet.iter_rows(min_row=415, values_only=True): 
+
+for row in sheet.iter_rows(min_row=419, values_only=True): 
     username, email, password, phone, code = row[:5]
     # Khởi tạo trình duyệt web (ví dụ: Chrome)
     
     # Điều hướng đến trang đăng ký
-    driver.switch_to.new_window()
+    driver = webdriver.Chrome(
+        options
+)
     # Điều hướng đến trang đăng ký
     driver.get('https://metahome.digital/sign-up')
     
@@ -88,6 +88,7 @@ for row in sheet.iter_rows(min_row=415, values_only=True):
             print(count)
             driver.delete_all_cookies()
             driver.close()
+            # driver.switch_to.window(driver.window_handles[0])
             
     # except:
         
@@ -97,7 +98,8 @@ for row in sheet.iter_rows(min_row=415, values_only=True):
         with open("except1.txt", "a") as file:
             file.write(str(exceptions_list) + "\n")  # Ghi lỗi vào tệp văn bản
         driver.delete_all_cookies()
-        driver.close()
+        # driver.close()
+        # driver.switch_to.window(driver.window_handles[0])
         time.sleep(45)
         print(f"Có lỗi khi truy cập URL: {e}")
     finally:
