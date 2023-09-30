@@ -1,77 +1,35 @@
 import openpyxl
 import time
-from seleniumwire import webdriver
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import seleniumwire.undetected_chromedriver as uc
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-import random
-import requests as req
-from datetime import datetime
-
 # Đường dẫn đến file Excel
-excel_file_path = './Book2.xlsx'
-
+excel_file_path = './20dataa.xlsx'
+chrome_driver_path = 'https://www.google.com/'
 # Mở file Excel
 workbook = openpyxl.load_workbook(excel_file_path)
 sheet = workbook.active
-max_row = sheet.max_row
+options = webdriver.FirefoxOptions()
 exceptions_list = []
 count = 1
-# profile = webdriver.FirefoxProfile()
-options = webdriver.FirefoxOptions()
-# options.add_argument('ignore-certificate-errors')
 
-for row in sheet.iter_rows(min_row=1, values_only=True):  # Bắt đầu từ hàng thứ 2 (hàng đầu tiên chứa tiêu đề)
+for row in sheet.iter_rows(min_row=2, values_only=True): 
     username, email, password, phone, code = row[:5]
-    # the list of proxy to rotate on 
-    PROXIES = [
-        'http://113.161.131.43:80',
-        'http://118.69.134.3:80',
-        'http://118.69.134.0:80',
-        'http://42.112.22.6:80',
-        'http://103.74.121.88:3128',
-        'http://14.177.235.17:8080',
-        'http://116.111.119.16:8080',
-        'http://14.241.62.12:19132',
-        'http://113.161.93.29:8080',
-        'http://117.4.50.142:32650',
-    ]
-
-    # # randomly extract a proxy
-    random_proxy = random.choice(PROXIES)
-
-    webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
-        "httpProxy":random_proxy,
-        "ftpProxy":random_proxy,
-        "sslProxy":random_proxy,
-        "noProxy":None,
-        "proxyType":"MANUAL",
-    }
-    options.add_argument('--proxy-server=%s' % random_proxy)
-    now = datetime.now()
- 
-    print("now =", now)
-
-# dd/mm/YY H:M:S
-    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-    print(count,' - ', random_proxy, ' - ', dt_string)
+    # Khởi tạo trình duyệt web (ví dụ: Chrome)
     driver = webdriver.Firefox(
         options=options,
     )
     # Điều hướng đến trang đăng ký
     driver.get('https://metahome.digital/sign-up')
     count = count+1
-    time.sleep(1)
-    
+    time.sleep(0.5)
     # Tìm các phần tử input và nhập thông tin tương ứng
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="email"]').send_keys(email)
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="password"]').send_keys(password)
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="confirmPassword"]').send_keys(password)
     driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="referralCode"]').send_keys(code)
+    time.sleep(1)
     element_to_click  = driver.find_element(By.CSS_SELECTOR, '#signUp .box form input[name="referralCode"]')
     # Điều hướng đến trang đăng ký 
     driver.execute_script("arguments[0].scrollIntoView();", element_to_click)
@@ -80,22 +38,24 @@ for row in sheet.iter_rows(min_row=1, values_only=True):  # Bắt đầu từ h�
     wait = WebDriverWait(driver, 10)
     element = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#fullAgreement")))
     element.click()
-        
+    time.sleep(1)   
     #Thực hiện đăng ký
     driver.find_element(By.CSS_SELECTOR, "#signUp .box form button.btn_signup").click()
-    time.sleep(2)
+    time.sleep(1)
 
     try:
-        element_to_click  = driver.find_element(By.CSS_SELECTOR, '.btn_wait_kr')
+        element_to_click  = driver.find_element(By.XPATH, '//*[@id="__nuxt"]/div/div/div/footer/div/div/div/p[1]')
         # Điều hướng đến trang đăng nhập 
         driver.execute_script("arguments[0].scrollIntoView();", element_to_click)
+        time.sleep(1)
         # Nhập email và mật khẩu để đăng nhập
         driver.find_element(By.CSS_SELECTOR, '#logIn form input[name="email"]').send_keys(email)
         driver.find_element(By.CSS_SELECTOR, '#logIn form input[name="password"]').send_keys(password)
         # # Thực hiện đăng nhập
+        time.sleep(1)
         driver.find_element(By.CSS_SELECTOR, "#logIn .box form button[type=submit]").click()
 
-        time.sleep(1)
+        time.sleep(2.5)
         driver.get('https://metahome.digital/mypage')
         wait = WebDriverWait(driver, 10)
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.btn_add')))
@@ -105,19 +65,23 @@ for row in sheet.iter_rows(min_row=1, values_only=True):  # Bắt đầu từ h�
             time.sleep(1)
             popup_element = driver.find_element(By.CSS_SELECTOR, '.register_phone form input[name="name"]').send_keys(username)
             popup_element = driver.find_element(By.CSS_SELECTOR, '.register_phone form input[name="phoneNumber"]').send_keys(phone)
-            
+            time.sleep(1)
             driver.find_element(By.CSS_SELECTOR, ".register_phone form button[type='submit']").click()
 
             time.sleep(1)
             driver.close()
-            continue
-            # 
+            time.sleep(43)
+            
         except:
             print(count)
+            driver.close()
+            time.sleep(40)
     except:
+        
         exceptions_list.append(str(count))
         with open("except1.txt", "a") as file:
             file.write(str(exceptions_list) + "\n")  # Ghi lỗi vào tệp văn bản
+        driver.close()
+        time.sleep(40)
     # Kết thúc
     driver.quit()
-
